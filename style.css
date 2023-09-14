@@ -15,7 +15,14 @@ a:hover {
     text-decoration: underline;
 }
 
+.logo {
+    position: absolute;
+    right: 138px;
+    padding-top: 4px;
+}
+
 .topnav {
+  display: flex;
   background-color: #333;
   overflow: hidden;
   z-index: 100;
@@ -49,26 +56,27 @@ a:hover {
     backdrop-filter: blur(20px);
     background-color: rgba(180, 109, 252, 0.15);
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(180, 109, 252, 0.2);
+    box-shadow: 0px 0px 10px rgba(180, 109, 252, 0.2);
     margin: 20px 0px 0px 0px;
 }
 
 .cardfilter {
+    vertical-align: top;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     background-color: rgba(180, 109, 252, 0.15);
     border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(180, 109, 252, 0.2);
+    box-shadow: 0px 0px 10px rgba(180, 109, 252, 0.2);
     margin: 20px 0px 0px 0px;
 }
 
 .containerlist {
     padding-left: 1%;
-    width: 73%;
+    width: 80%;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -77,7 +85,7 @@ a:hover {
 
 .containerfilter {
     padding-left: 1%;
-    width: 24%;
+    width: 17%;
 }
 
 .bigcontainer {
@@ -95,9 +103,10 @@ a:hover {
     position: absolute;
 }
 
-.buy {
+.amzn {
     font-family: 'Roboto';
     background-color: #fc9700;
+    box-shadow: 0px 0px 10px rgba(252, 151, 0, 0.2);
     color: #fff;
     right: 0px;
     border: 0px;
@@ -109,23 +118,153 @@ a:hover {
     transition: 0.3s;
 }
 
-.buy:hover {
+.amzn:hover {
     background-color: #955900;
+    color: #fff;
+}
+
+.alternate {
+    font-family: 'Roboto';
+    background-color: rgb(227, 6, 19);
+    box-shadow: 0px 0px 10px rgba(227, 6, 19, 0.2);
+    color: #fff;
+    right: 84px;
+    border: 0px;
+    margin: 16px;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    position: absolute;
+    transition: 0.3s;
+}
+
+.alternate:hover {
+    background-color: rgb(150, 3, 12);
     color: #fff;
 }
 
 .product {
     color: #fff;
-    font-size: 2em; 
+    font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
     padding: 0px;
     margin-left: 8px;
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
-@media screen and (max-height: 699px) {
-    .product {
-        margin-top: 16px;
-        font-size: 1.5em;
-    }
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.searchTerm {
+    background-color: #333;
+    color: #FFF;
+    border-radius: 25px;
+    height: 30px;
+    width: 25%;
+    border: 0px;
+}
+
+.filterMin {
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+    border-radius: 25px;
+    height: 30px;
+    width: 25%;
+    border: 0px;
+}
+
+.filterMax {
+    text-align: center;
+    background-color: #333;
+    color: #FFF;
+    border-radius: 25px;
+    height: 30px;
+    width: 25%;
+    border: 0px;
+}
+
+.min-max {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    height: fit-content;
+}
+
+.separator {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.separator:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.pricet {
+    font-family: 'Helvetica';
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    height: fit-content;
+}
+
+.pricet:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.websitess {
+    display: flex;
+    height: fit-content;
+    padding-top: 6px;
+}
+
+.atext {
+    font-family: 'Helvetica';
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.atext:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+label {
+    font-family: 'Helvetica';
+    display: flex;
+    padding-top: 6px;
+}
+
+.checkbox {
+    box-shadow: 0px 0px 10px rgba(0, 117, 255, 0.2);
+}
+
+.chklbl {
+    display: flex;
+    padding: 0px;
+}
+
+.prodicon {
+    border-radius: 16px;
+}
+
+.tdp {
+    padding: 7px;
+    margin-left: 8px;
+    font-family: 'Franklin Gothic Medium';
+    border-radius: 6px;
+    background-color: rgb(0, 177, 106);
+    box-shadow: 0px 0px 10px rgba(0, 177, 106, 0.4);
 }

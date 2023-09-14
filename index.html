@@ -17,41 +17,97 @@
         <a href="#cpu">CPU</a>
         <a href="#gpu">GPU</a>
         <a href="#about">About</a>
+        <img class="logo" src="https://media.discordapp.net/attachments/1150717118300557344/1151785356841205760/New_Project_2.png" width="38px" height="38px">
         <p class="title">ConsoCompare</p>
+    </div>
+    <div class="searchbar">
+        <input type="text" class="searchTerm" placeholder="🔍Search">
     </div>
     <div class="bigcontainer">
         <div class="containerfilter">
             <div class="cardfilter">
+                <div class="min-max">
+                    <a class="pricet">Prix : </a><input type="text" class="filterMin" placeholder="Min"> <a class="separator">-</a> <input type="text" class="filterMax" placeholder="Max">
+                </div>
+                <div class="websitess">
+                    <a class="atext">Sites :</a>
+                    <div class="chklbl">
+                        <input class="checkbox" type="checkbox" id="amazon" name="amazon" checked />
+                        <label for="amazon">Amazon</label>
+                    </div>
+                    <div class="chklbl">
+                        <input class="checkbox" type="checkbox" id="alternate" name="alternate" checked />
+                        <label for="alternate">Alternate</label>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="containerlist">
             <div class="card">
-                <img src="https://cdna.pcpartpicker.com/static/forever/img/nav-cpu.png" width="64px">
-                <p class="product" id="product">CPU PlaceHolder 1</p>
-                <a class="buy" href="https://www.amazon.fr/s?k=cpu">Amazon</a>
+                <img class="prodicon" src="https://cdna.pcpartpicker.com/static/forever/images/product/3ef757133d38ac40afe75da691ba7d60.256p.jpg" width="64px">
+                <p class="product" id="product">AMD Ryzen 5 5600X 3.7 GHz 6-Core</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B08166SLDF?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
                 <br>
-                <p>TDP : 90W</p>
+                <p class="tdp">TDP : 65W</p>
             </div>
             <div class="card">
-                <img src="https://cdna.pcpartpicker.com/static/forever/img/nav-cpu.png" width="64px">
-                <p class="product" id="product">CPU PlaceHolder 2</p>
-                <a class="buy" href="https://www.amazon.fr/s?k=cpu">Amazon</a>
+                <img class="prodicon" src="https://cdna.pcpartpicker.com/static/forever/images/product/2f3405387f23ab827695d966ea9f9682.256p.jpg" width="64px">
+                <p class="product" id="product">Intel Core i7-13700K 3.4 GHz 16-Core</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B0BCF57FL5?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
                 <br>
-                <p>TDP : 120W</p>
+                <p class="tdp">TDP : 125W</p>
             </div>
             <div class="card">
-                <img src="https://cdna.pcpartpicker.com/static/forever/img/nav-videocard.png" width="64px">
-                <p class="product" id="product">GPU PlaceHolder 1</p>
-                <a class="buy" href="https://www.amazon.fr/s?k=gpu">Amazon</a>
+                <img class="prodicon" src="https://cdna.pcpartpicker.com/static/forever/images/product/535b5631a223b77657804c8144c1277e.256p.jpg" width="64px">
+                <p class="product" id="product">Intel Core i5-13600K 3.5 GHz 14-Core</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B0BCDR9M33?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
                 <br>
-                <p>TDP : 225W</p>
+                <p class="tdp">TDP : 125W</p>
             </div>
             <div class="card">
-                <img src="https://cdna.pcpartpicker.com/static/forever/img/nav-videocard.png" width="64px">
-                <p class="product" id="product">GPU PlaceHolder 2</p>
-                <a class="buy" href="https://www.amazon.fr/s?k=gpu">Amazon</a>
+                <img class="prodicon" src="https://cdna.pcpartpicker.com/static/forever/images/product/8de723005cfc1b85071c4abf4d76bd4e.256p.jpg" width="64px">
+                <p class="product" id="product">AMD Ryzen 9 7900X 4.7 GHz 12-Core</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B0BBJ59WJ4?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
                 <br>
-                <p>TDP : 300W</p>
+                <p class="tdp">TDP : 170W</p>
+            </div>
+
+
+            <div class="card">
+                <img class="prodicon" src="https://cdna.pcpartpicker.com/static/forever/images/product/9f7b45a2816c45ea9449e8ca2bf6f616.1600.jpg" width="64px">
+                <p class="product" id="product">Asus ROG STRIX GAMING OC GeForce RTX 4090 24 GB</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B0BGT61797?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
+                <br>
+                <p class="tdp">TDP : 450W</p>
+            </div>
+            <div class="card">
+                <img class="prodicon" src="https://m.media-amazon.com/images/I/41Gcn+794SS.jpg" width="64px">
+                <p class="product" id="product">XFX Speedster SWFT 309 Radeon RX 6700 XT 12 GB</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B08YKCC8XD?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
+                <br>
+                <p class="tdp">TDP : 230W</p>
+            </div>
+            <div class="card">
+                <img class="prodicon" src="https://cdna.pcpartpicker.com/static/forever/images/product/772cce097c55469671a0d75ea4aca83a.1600.jpg" width="64px">
+                <p class="product" id="product">Gigabyte WINDFORCE OC GeForce RTX 4070 12 GB</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B0BZHCQ6PF?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
+                <br>
+                <p class="tdp">TDP : 200W</p>
+            </div>
+            <div class="card">
+                <img class="prodicon" src="https://cdna.pcpartpicker.com/static/forever/images/product/c740684e2cd2339bf845f7493711bcb7.1600.jpg" width="64px">
+                <p class="product" id="product">MSI Ventus 2X 12G GeForce RTX 3060 12GB 12 GB</p>
+                <a class="amzn" href="https://www.amazon.com/dp/B08WPRMVWB?psc=1">Amazon</a>
+                <a class="alternate" href="">Alternate</a>
+                <br>
+                <p class="tdp">TDP : 170W</p>
             </div>
         </div>
     </div>
